@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMS Style</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos globales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        h1,
+        h2 {
+            margin: 0;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Estilos para cada sección */
+        #inicio {
+            background-color: #558676;
+            /* Color dorado */
+            padding: 20px;
+            text-align: center;
+        }
+
+        #biografia {
+            background-color: #80c1d1;
+            /* Verde claro */
+            padding: 20px;
+        }
+
+        #habilidades {
+            background-color: #355661;
+            /* Azul claro */
+            padding: 20px;
+        }
+
+        #contacto {
+            background-color: #68a4c0;
+            /* Rosa claro */
+            padding: 20px;
+        }
+
+        section h2 {
+            margin-top: 0;
+        }
+
+        /* Estilo para la lista de habilidades */
+        #habilidades ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #333;
+            color: white;
+            font-size: 0.9em;
+            margin-top: 20px;
+        }
+
+        /* Media Query para pantallas pequeñas */
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                padding: 10px 0;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+
+            section {
+                padding: 15px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Sección de Inicio -->
+    <header>
+        <h2>AMStyle</h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#biografia">Biografía</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <main>
+        <!-- Sección de Inicio -->
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>Hola, soy Alain Bailarin, un apasionado de la musica. En esta página podrás conocer más sobre mí, mis
+                habilidades y cómo contactarme.</p>
+
+            <img src="logo.jpeg" alt="Logo de la página" class="logo">
+
+        </section>
+
+        <!-- Sección de Biografía -->
+        <section id="biografia">
+            <h2>Biografía</h2>
+            <p>Nací en [Lugar de Nacimiento] y desde joven siempre me ha interesado [Intereses o Pasiones]. Con los
+                años, desarrollé habilidades en [Habilidades o Áreas de Estudio], lo que me llevó a [Breve descripción
+                de tu trayectoria profesional o personal].</p>
+        </section>
+
+        <!-- Sección de Habilidades -->
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Habilidad 1</li>
+                <li>Habilidad 2</li>
+                <li>Habilidad 3</li>
+                <li>Habilidad 4</li>
+            </ul>
+            <h2>Video de Presentación</h2>
+            <video controls width="600">
+                <source src="mi_video.mp4" type="video/mp4">
+                <!-- Puedes agregar múltiples fuentes para diferentes formatos de video -->
+                <source src="mi_video.webm" type="video/webm">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Si deseas contactarme, puedes hacerlo a través de los siguientes medios:</p>
+            <ul>
+                <li>Correo electrónico: <a href="mailto:tucorreo@ejemplo.com">tucorreo@ejemplo.com</a></li>
+                <li>Teléfono: +123 456 7890</li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/tuusuario" target="_blank">Perfil de LinkedIn</a>
+                </li>
+                <li>GitHub: <a href="https://github.com/tuusuario" target="_blank">Perfil de GitHub</a></li>
+            </ul>
+
+            <h2>Video de YouTube</h2>
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/ynD4Fz-JiGQ"
+                title="ChatGPT para craer una página estática" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024 [Tu Nombre]. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
